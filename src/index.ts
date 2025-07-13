@@ -40,7 +40,7 @@ async function main() {
       ]
     });
 
-    // Now send topic as user input
+    // Now send topic to gemini api
     const result = await chat.sendMessage("Linked list");
     let response = result.response.text();
     response = response.trim();

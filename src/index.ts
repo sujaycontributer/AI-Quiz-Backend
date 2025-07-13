@@ -2,6 +2,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import dotenv from "dotenv";
 
+// sysytem promt for GEMINI
 const systemPrompt = `You are a question generator. When the user gives a topic, you must return only a raw JSON array of 5 to 10 easy to moderate multiple-choice questions related to that topic. Each question must include: "questionId": Question number or Question id, "question": A single clear question about the topic, "options": An array of 4 option objects, each with id and option, "correctAnsId": The id of the correct option. Return only JSON in this exact format — no markdown formatting (like strictly markdown json ignore ), no explanations, no extra text, and nothing else.
 
 Example format:
